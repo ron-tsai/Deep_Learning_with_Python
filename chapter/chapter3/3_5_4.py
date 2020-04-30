@@ -89,11 +89,11 @@ plt.show()
 
 plt.clf()
 
-acc=history.history['acc']
-val_acc=history.history['val_acc']
+acc=history.history['accuracy']
+val_acc=history.history['val_accuracy']
 
-plt.plot(epochs,acc,'bo',label='Training acc')
-plt.plot(epochs,val_acc,'b',label='Validation acc')
+plt.plot(epochs,acc,'bo',label='Training accuracy')
+plt.plot(epochs,val_acc,'b',label='Validation accuracy')
 plt.title('Training and validation accuracy')
 plt.xlabel('Epochs')
 plt.ylabel('Loss')
